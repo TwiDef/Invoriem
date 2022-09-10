@@ -194,6 +194,7 @@ body {
     font-size: 140px;
     font-weight: 800;
     background: linear-gradient(90deg, #114455, 15%, rgba(249, 252, 255, 1) 15%);
+    background: -webkit linear-gradient(90deg, #114455, 15%, rgba(249, 252, 255, 1) 15%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
