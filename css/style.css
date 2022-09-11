@@ -3,6 +3,10 @@
 
 /* font-family: 'Gilroy', sans-serif; */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Gilroy', sans-serif;
     font-weight: 500;
@@ -96,6 +100,7 @@ body {
 /* ***********BNTs*********** */
 
 .header {
+    position: relative;
     min-height: 100vh;
     background-color: #e1edf2;
     background-image: url('./../img/header/header-bg.jpg');
@@ -119,6 +124,10 @@ body {
     column-gap: 118px;
 }
 
+.nav__btn {
+    display: none;
+}
+
 .link {
     color: #114455;
     font-size: 20px;
@@ -127,6 +136,10 @@ body {
 
 .header__content {
     max-width: 1060px;
+}
+
+.header__content-mobile {
+    display: none;
 }
 
 .header__title {
@@ -143,11 +156,19 @@ body {
     font-weight: 400;
     font-size: 34px;
     opacity: 0.7;
+    line-height: 1.57;
     margin-bottom: 72px;
 }
 
 .header__text p+p {
     margin-top: 1em;
+}
+
+.header__arrows {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .case-studies {
