@@ -13,6 +13,10 @@
 }
 
 @media (max-width: 1000px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
     .header__title {
         font-size: 50px;
         margin-bottom: 20px;
@@ -37,6 +41,25 @@
     }
     .slide {
         padding-left: 70px;
+    }
+    .title {
+        font-size: 50px;
+    }
+    .case-studies {
+        padding: 80px 0;
+    }
+    .case-studies__text {
+        font-size: 27px;
+    }
+    .about {
+        padding: 0;
+    }
+    .about__text {
+        font-size: 27px;
+    }
+    .video__btn {
+        width: 72px;
+        height: 72px;
     }
 }
 
@@ -81,7 +104,7 @@
         bottom: 32px;
     }
     .case-studies {
-        padding: 80px 0 80px 0;
+        padding: 80px 0 40px 0;
     }
     .case-studies__title {
         margin-bottom: 7px;
@@ -112,5 +135,33 @@
         background: -webkit linear-gradient(90deg, #114455, 33px, rgba(249, 252, 255, 1) 33px);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    .about {
+        padding: 40px 0;
+    }
+    .about__title {
+        margin-bottom: 8px;
+    }
+    .about__text {
+        margin-bottom: 40px;
+    }
+    .video {
+        overflow: hidden;
+    }
+    .video__btn {
+        width: 48px;
+        height: 48px;
+    }
+    .video__picture,
+    .video__picture img {
+        width: 100%;
+    }
+    .video__object {
+        position: absolute;
+        left: -50%;
+        top: 0;
+        width: 900px;
+        height: 459px;
+        vertical-align: top;
     }
 }

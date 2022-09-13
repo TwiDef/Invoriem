@@ -5,6 +5,9 @@
 
 html {
     scroll-behavior: smooth;
+    /*     width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; */
 }
 
 body {
@@ -14,6 +17,10 @@ body {
 
 .none {
     display: none;
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 .container {
@@ -241,6 +248,7 @@ body {
 }
 
 .video-overlay::after {
+    z-index: 8;
     content: "";
     position: absolute;
     left: 0;
@@ -252,6 +260,7 @@ body {
 
 .video__btn {
     position: absolute;
+    z-index: 8;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -259,14 +268,17 @@ body {
 }
 
 .video__picture {
-    position: absolute;
-    left: 0;
-    top: 0;
+    position: relative;
+    z-index: 7;
     /* display: none; */
 }
 
 .video__object {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
+    height: 100%;
     vertical-align: top;
 }
 
