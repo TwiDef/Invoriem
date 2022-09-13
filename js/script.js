@@ -10,8 +10,10 @@ $(document).ready(function() {
                 margin: 32,
             },
             601: {
-                items: 2,
+                items: 3,
+                margin: 32,
             },
+
             1001: {
                 items: 3,
                 margin: 48
