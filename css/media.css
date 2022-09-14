@@ -10,6 +10,9 @@
     .slide {
         padding-left: 69px;
     }
+    .slide__title {
+        font-size: 91px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -26,7 +29,10 @@
         margin-bottom: 52px;
     }
     .nav__list {
-        column-gap: 60px;
+        column-gap: 44px;
+    }
+    .link {
+        padding: 10px 24px;
     }
     .slider {
         width: 1200px;
@@ -60,6 +66,21 @@
     .video__btn {
         width: 72px;
         height: 72px;
+    }
+    .footer {
+        padding: 90px 0 62px 0;
+    }
+    .footer__row {
+        flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 32px;
+    }
+    .footer__nav {
+        row-gap: 20px;
+        flex-direction: column;
+    }
+    .footer a {
+        color: rgb(68, 118, 165);
     }
 }
 
