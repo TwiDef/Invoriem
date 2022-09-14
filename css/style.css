@@ -333,3 +333,79 @@ body {
     display: flex;
     column-gap: 26px;
 }
+
+.mobile-nav {
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 24px 32px 24px;
+}
+
+.mobile-nav__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 66px;
+}
+
+.mobile-nav__logo {
+    height: 20px;
+}
+
+.mobile-list {
+    margin-bottom: 80px;
+    font-size: 40px;
+    color: #1F1F1F;
+    font-weight: 800;
+}
+
+.mobile-list a {
+    color: #1F1F1F;
+}
+
+.mobile-contacts {
+    line-height: 1.5;
+    margin-bottom: 80px;
+}
+
+.mobile-contacts a {
+    color: rgba(31, 31, 31, 0.7);
+}
+
+.mobile-contacts__title {
+    color: #1F1F1F;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 32px;
+}
+
+.mobile-contacts__email {
+    display: block;
+    margin-bottom: 16px;
+    letter-spacing: 0.06em;
+}
+
+.mobile-contacts__phone {
+    display: block;
+    margin-bottom: 16px;
+    letter-spacing: 0.06em;
+}
+
+.mobile-contacts__address {
+    letter-spacing: 0.06em;
+    color: rgba(31, 31, 31, 0.7);
+}
+
+.mobile-footer {
+    padding: 32px 0;
+}
+
+.mobile-footer__email {
+    color: rgb(68, 118, 165);
+}
+
+.mobile-socials {}
+
+.mobile-footer__copyright {}
