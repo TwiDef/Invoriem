@@ -41,3 +41,20 @@ videoWrapper.addEventListener('click', () => {
     }
 
 });
+
+
+const openNavBtn = document.querySelector('#openMobileNav');
+const closeNavBtn = document.querySelector('#closeMobileNav');
+const mobileNav = document.querySelector('#mobileNav');
+
+openNavBtn.addEventListener('click', () => {
+    mobileNav.classList.remove('none');
+    document.body.classList.add('no-scroll');
+    closeNavBtn.classList.add('rotate');
+});
+
+closeNavBtn.addEventListener('click', () => {
+
+    mobileNav.classList.add('none');
+    document.body.classList.remove('no-scroll');
+});
