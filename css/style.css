@@ -336,6 +336,7 @@ body {
 }
 
 .mobile-nav {
+    transition: .3s all;
     background-color: #fff;
     position: fixed;
     z-index: 99;
@@ -439,4 +440,12 @@ body {
 
 .no-scroll {
     overflow-y: hidden;
+}
+
+.mobile-active {
+    left: 0%;
+}
+
+.mobile-disactive {
+    left: 100%
 }

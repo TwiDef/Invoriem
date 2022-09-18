@@ -48,13 +48,16 @@ const closeNavBtn = document.querySelector('#closeMobileNav');
 const mobileNav = document.querySelector('#mobileNav');
 
 openNavBtn.addEventListener('click', () => {
-    mobileNav.classList.remove('none');
-    document.body.classList.add('no-scroll');
     closeNavBtn.classList.add('rotate');
+    mobileNav.classList.add('mobile-active');
+    mobileNav.classList.remove('mobile-disactive');
+
+    document.body.classList.add('no-scroll');
 });
 
 closeNavBtn.addEventListener('click', () => {
+    mobileNav.classList.remove('mobile-active');
+    mobileNav.classList.add('mobile-disactive');
 
-    mobileNav.classList.add('none');
     document.body.classList.remove('no-scroll');
 });
